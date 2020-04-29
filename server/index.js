@@ -6,6 +6,7 @@ const cors=require('cors');
 
 
 const keys= require('./config/keys')
+
 require('./models/Issue_Tracker')
 
 mongoose.connect(keys.mongoURI, { useUnifiedTopology: true, useNewUrlParser: true })
