@@ -61,7 +61,7 @@
                          <button type="submit">Submit</button>
                      </div>
                  </form>
-                 <a href="/api/action">sign to the server</a>
+                 
              </div>
          )
      }
