@@ -32,6 +32,7 @@ app.post('/api/issues',(req,res)=>{
         })
 
         issue.save().then(()=>{
+            
             res.json(issue)
                 }).catch((e)=>{
                     res.status(400).send(e)

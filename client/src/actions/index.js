@@ -1,4 +1,5 @@
 import axios from 'axios';
+import history from '../history';
 import {
         FETCH_ISSUES,
         CREATE_ISSUE,
@@ -13,8 +14,9 @@ export const createIssue=(formValues)=>{
               
             dispatch({type: CREATE_ISSUE, payload: response.data})
 
-                
+            history.push('/issues')    
         }
+
 
 }
 
